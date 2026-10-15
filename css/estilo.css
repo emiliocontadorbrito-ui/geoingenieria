@@ -214,13 +214,8 @@ section.blanco{ background:var(--blanco); }
 
 .carrusel-controles{ display:none; }
 .carrusel.activo .carrusel-controles{ display:block; position:absolute; left:0; right:0; bottom:28px; z-index:2; pointer-events:none; }
-.carrusel-mando{ display:inline-flex; align-items:center; pointer-events:auto; background:var(--papel); border:1px solid var(--tinta); }
-.carrusel-mando button{ font:inherit; cursor:pointer; color:var(--tinta); background:transparent; border:0; height:44px; }
-.carrusel-flecha{ width:44px; font-size:1.15rem; line-height:1; border-right:1px solid var(--linea) !important; }
-.carrusel-flecha:hover,.carrusel-pausa:hover{ background:var(--tinta); color:var(--papel); }
-.carrusel-pausa{ padding:0 14px; font-size:.84rem !important; font-weight:500; border-left:1px solid var(--linea) !important; }
-.carrusel-puntos{ display:flex; padding:0 8px; }
-.carrusel-puntos button{ width:28px; position:relative; padding:0; }
+.carrusel-puntos{ display:inline-flex; pointer-events:auto; padding:0 6px; background:rgba(249,247,245,.92); }
+.carrusel-puntos button{ width:30px; height:30px; position:relative; padding:0; border:0; background:transparent; cursor:pointer; }
 .carrusel-puntos button::before{ content:""; position:absolute; left:4px; right:4px; top:50%; height:3px; margin-top:-1.5px; background:var(--tinta); opacity:.25; transition:opacity .2s, background .2s; }
 .carrusel-puntos button[aria-current="true"]::before{ opacity:1; background:var(--verde-osc); }
 .carrusel-puntos button:hover::before{ opacity:.7; }
@@ -233,7 +228,6 @@ section.blanco{ background:var(--blanco); }
   .diapositiva-panel::before,.diapositiva-panel::after{ display:none; }
   .carrusel.activo .carrusel-controles{ bottom:20px; }
   .carrusel-puntos button{ width:22px; }
-  .carrusel-puntos{ padding:0 4px; }
 }
 
 /* --- Índice de servicios (inicio) ------------------------------------------ */
@@ -270,6 +264,27 @@ section.blanco{ background:var(--blanco); }
 .indice.compacto .t{ font-size:clamp(1.15rem,1.6vw,1.32rem); }
 .indice.compacto .d{ grid-column:1; font-size:.9rem; }
 .indice.compacto .f{ grid-column:2; font-size:1.1rem; }
+
+/* Desplegable de casos de teledetección (catastro) */
+.casos{ margin-top:clamp(24px,3vw,36px); }
+.casos-elegir{ display:none; }
+.casos.activo .casos-elegir{ display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-bottom:clamp(20px,2.6vw,30px); }
+.casos-elegir label{ font-weight:700; color:var(--tinta); }
+.casos-elegir select{
+  font:inherit; font-size:1rem; font-weight:500; color:var(--tinta); background:var(--blanco); cursor:pointer;
+  border:1px solid var(--tinta); padding:12px 44px 12px 16px; min-width:260px; appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--tinta) 50%),linear-gradient(135deg,var(--tinta) 50%,transparent 50%);
+  background-position:calc(100% - 22px) 52%, calc(100% - 16px) 52%; background-size:6px 6px; background-repeat:no-repeat;
+}
+.caso{ display:grid; gap:clamp(22px,3vw,40px); grid-template-columns:1fr; align-items:start; }
+.caso[hidden]{ display:none; }
+.caso + .caso{ margin-top:clamp(36px,5vw,56px); }
+.casos.activo .caso + .caso{ margin-top:0; }
+@media (min-width:1000px){ .caso{ grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); } }
+.caso h3{ font-family:var(--serif); font-weight:400; font-size:clamp(1.5rem,2.4vw,1.9rem); margin-bottom:.6rem; }
+.caso-pasos{ margin:1rem 0 0; padding:0; list-style:none; counter-reset:paso; }
+.caso-pasos li{ position:relative; padding:.6rem 0 .6rem 2.2rem; border-top:1px solid var(--linea-suave); font-size:.97rem; }
+.caso-pasos li::before{ counter-increment:paso; content:counter(paso); position:absolute; left:0; top:.6rem; width:1.5rem; height:1.5rem; border:1px solid var(--verde-osc); color:var(--verde-osc); font-size:.8rem; font-weight:700; display:flex; align-items:center; justify-content:center; }
 
 /* --- Datos en línea (en prosa, no en tarjetas) ----------------------------- */
 

@@ -1,14 +1,14 @@
 /* Carrusel del inicio.
    Sin JavaScript la banda se desliza a mano (scroll-snap). Con él aparecen
-   flechas, puntos y pausa, y pasa solo cada 7 segundos. Se para mientras el
-   ratón o el foco están encima, y con «reducir movimiento» no pasa solo. */
+   las rayitas que marcan la diapositiva (y llevan a ella), y pasa solo cada
+   7 segundos. Se para mientras el ratón o el foco están encima, y con
+   «reducir movimiento» no pasa solo. */
 (function () {
   var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('[data-carrusel]').forEach(function (c) {
     var pista = c.querySelector('.carrusel-pista');
     var diap = Array.prototype.slice.call(pista.children);
     var puntos = Array.prototype.slice.call(c.querySelectorAll('.carrusel-puntos button'));
-    var pausa = c.querySelector('[data-pausa]');
     var actual = 0, parado = reducir, encima = false, espera = null;
 
     function marcar() {
@@ -23,15 +23,7 @@
       pista.scrollTo({ left: actual * pista.clientWidth, behavior: reducir ? 'auto' : 'smooth' });
       marcar();
     }
-    function rotulo() {
-      pausa.textContent = parado ? 'Reanudar' : 'Pausar';
-      pausa.setAttribute('aria-label', parado ? 'Reanudar el carrusel' : 'Pausar el carrusel');
-    }
-
-    c.querySelector('[data-ant]').addEventListener('click', function () { ir(actual - 1); });
-    c.querySelector('[data-sig]').addEventListener('click', function () { ir(actual + 1); });
     puntos.forEach(function (p, i) { p.addEventListener('click', function () { ir(i); }); });
-    pausa.addEventListener('click', function () { parado = !parado; rotulo(); });
 
     // Al deslizar con el dedo, el punto activo sigue a la diapositiva visible.
     pista.addEventListener('scroll', function () {
@@ -56,7 +48,6 @@
     }, 7000);
 
     c.classList.add('activo');
-    rotulo();
     marcar();
   });
 })();

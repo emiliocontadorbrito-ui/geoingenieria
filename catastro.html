@@ -211,7 +211,23 @@
 <h2>Tres miradas a cada parcela.</h2>
           <p class="entrada">La imagen, lo que reconoce la IA y lo que dice el Catastro. Si no coinciden, hay alerta.</p>
         </div>
-      </div><div class="triptico"><div class="vista revelar"><h3>1. La imagen aérea</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ortofoto.svg" alt="Ortofoto de una parcela con vivienda, piscina y nave" loading="lazy"></div></figure></div><div class="vista revelar"><h3>2. Lo que reconoce la IA</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ia.svg" alt="La inteligencia artificial marca en verde las cubiertas y la piscina, con su grado de certeza" loading="lazy"></div></figure></div><div class="vista revelar"><h3>3. Lo que consta en el Catastro</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-catastro.svg" alt="El lindero y lo que consta en Catastro; la nave no consta y queda señalada como alerta" loading="lazy"></div></figure></div></div>
+      </div><div class="triptico"><div class="vista revelar"><h3>1. La imagen aérea</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ortofoto.svg" alt="Ortofoto de una parcela con vivienda, piscina y nave" loading="lazy"></div></figure></div><div class="vista revelar"><h3>2. Lo que reconoce la IA</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ia.svg" alt="La inteligencia artificial marca en verde las cubiertas y la piscina, con su grado de certeza" loading="lazy"></div></figure></div><div class="vista revelar"><h3>3. Lo que consta en el Catastro</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-catastro.svg" alt="El lindero y lo que consta en Catastro; la nave no consta y queda señalada como alerta" loading="lazy"></div></figure></div></div><div class="bloque" id="casos" style="margin-top:clamp(56px,8vw,96px)"><div class="bloque-cuerpo"><h2>Cuatro casos, cuatro maneras de verlo.</h2>
+          <p class="entrada">Elija un caso en el desplegable: a la izquierda lo que consta en el Catastro, a la derecha la imagen de hoy, y al lado cómo se ha detectado. <span class="pendiente">PENDIENTE: imágenes reales de campaña</span></p></div></div><div class="casos" data-casos>
+        <div class="casos-elegir"><label for="caso-elegido">Elija un caso</label><select id="caso-elegido"><option value="ampliacion">Ampliación</option><option value="vivienda-nueva">Vivienda nueva</option><option value="rehabilitacion">Rehabilitación</option><option value="segunda-planta">Segunda planta</option></select></div>
+        <div class="caso" data-caso="ampliacion">
+        <figure class="lamina"><div class="lamina-marco"><img src="img/casos/ampliacion.svg" alt="A la izquierda, la vivienda que consta en el Catastro; a la derecha, la imagen aérea de hoy con una ampliación marcada en verde" loading="lazy"></div></figure>
+        <div><h3>Ampliación</h3><p class="entrada">La vivienda ha crecido por detrás y el Catastro sigue con los metros de antes.</p><ol class="caso-pasos"><li>La IA mide la superficie construida que se ve en la imagen y la compara con la que consta en el Catastro.</li><li>La diferencia sale justo donde no hay nada registrado: 53 m² pegados a la vivienda.</li><li>El técnico comprueba en la imagen que es una ampliación, y no un porche o una sombra, y la parcela sale como alerta.</li></ol></div>
+      </div><div class="caso" data-caso="vivienda-nueva">
+        <figure class="lamina"><div class="lamina-marco"><img src="img/casos/vivienda-nueva.svg" alt="A la izquierda, la parcela como solar en el Catastro; a la derecha, una vivienda nueva marcada en verde en la imagen aérea" loading="lazy"></div></figure>
+        <div><h3>Vivienda nueva</h3><p class="entrada">Donde el Catastro tiene un solar, la imagen aérea muestra una casa terminada.</p><ol class="caso-pasos"><li>El Catastro tiene la parcela sin nada construido: cero metros.</li><li>La IA reconoce una cubierta de 146 m²: toda la superficie es nueva.</li><li>Es la alerta más clara. Sale con prioridad alta, lista para el expediente de alta.</li></ol></div>
+      </div><div class="caso" data-caso="rehabilitacion">
+        <figure class="lamina"><div class="lamina-marco"><img src="img/casos/rehabilitacion.svg" alt="La misma vivienda en el Catastro y en la imagen aérea, con la cubierta renovada recuadrada en verde" loading="lazy"></div></figure>
+        <div><h3>Rehabilitación</h3><p class="entrada">La huella de la casa es la misma, pero la cubierta es nueva.</p><ol class="caso-pasos"><li>Aquí los metros no cambian, así que la comparación de superficies no basta.</li><li>En la revisión se ve que la cubierta de la imagen actual no es la de una casa que consta del año 1962.</li><li>Se confirma con la ortofoto anterior o en la visita, y sale como alteración por reforma.</li></ol></div>
+      </div><div class="caso" data-caso="segunda-planta">
+        <figure class="lamina"><div class="lamina-marco"><img src="img/casos/segunda-planta.svg" alt="La misma vivienda en el Catastro y en la imagen aérea; en la imagen proyecta una sombra mucho más larga que las casas vecinas" loading="lazy"></div></figure>
+        <div><h3>Segunda planta</h3><p class="entrada">La huella no cambia, pero la sombra es la de una casa de dos plantas.</p><ol class="caso-pasos"><li>Vista desde arriba, la casa ocupa lo mismo: la superficie en planta coincide.</li><li>Su sombra es mucho más larga que la de las casas vecinas de una planta: la altura no cuadra con lo que consta.</li><li>Se confirma con la fotografía de fachada o en campo, y sale como alerta de alteración.</li></ol></div>
+      </div>
+      </div>
     </div>
   </section>
   <section class="blanco">
@@ -396,5 +412,6 @@
 <script src="js/menu.js"></script>
 <script src="js/visor.js"></script>
 <script src="js/medidor.js"></script>
+<script src="js/casos.js"></script>
 </body>
 </html>
