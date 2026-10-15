@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEO INGENIERÍA · Catastro y teledetección en Badajoz</title>
+<meta name="description" content="Catastro al día con teledetección e inteligencia artificial, gabinete catastral, segregaciones, mediciones con dron, estudios de impacto ambiental y valoraciones. Desde Badajoz.">
+
+<meta name="theme-color" content="#F9F7F5">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="GEO INGENIERÍA">
+<meta property="og:title" content="GEO INGENIERÍA · Catastro y teledetección en Badajoz">
+<meta property="og:description" content="Catastro al día con teledetección e inteligencia artificial, gabinete catastral, segregaciones, mediciones con dron, estudios de impacto ambiental y valoraciones. Desde Badajoz.">
+<meta property="og:image" content="img/catastro-urbano.jpg">
+<link rel="icon" href="img/GEO-INGENIERIA_icono-app.svg" type="image/svg+xml">
+<link rel="icon" href="img/GEO-INGENIERIA_icono-app_512px.png" sizes="512x512">
+<link rel="apple-touch-icon" href="img/GEO-INGENIERIA_icono-app_512px.png">
+<link rel="preload" href="fuentes/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/red-hat-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera-fila">
+    <a class="marca" href="index.html" aria-label="GEO INGENIERÍA, inicio">
+      <img src="img/GEO-INGENIERIA_principal.svg" alt="GEO INGENIERÍA" width="150" height="75">
+    </a>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <div class="desplegable">
+        <button type="button" class="desplegable-boton" aria-expanded="false" aria-controls="sub-catastro">Catastro</button>
+        <div class="submenu" id="sub-catastro"><a href="catastro.html">Catastro y teledetección catastral</a><a href="gabinete.html">Gabinete catastral</a></div>
+      </div>
+      <div class="desplegable">
+        <button type="button" class="desplegable-boton" aria-expanded="false" aria-controls="sub-proyectos">Proyectos</button>
+        <div class="submenu" id="sub-proyectos"><a href="teledeteccion-ia.html">Teledetección con IA a medida</a><a href="segregaciones.html">Segregaciones y particiones</a><a href="dron.html">Mediciones con dron</a><a href="medio-ambiente.html">Medio ambiente</a><a href="valoraciones.html">Valoraciones y peritajes</a><a href="digitalizacion.html">Digitalización y datos</a></div>
+      </div>
+      <a href="empresa.html">Empresa</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="menu-tel" href="tel:+34924253530">Llamar: 924 253 530</a>
+    </nav>
+    <a class="cabecera-tel" href="tel:+34924253530">924 253 530</a>
+  </div>
+</header>
+
+<main id="principal">
+  <section class="carrusel sin-borde" data-carrusel aria-roledescription="carrusel" aria-label="Lo que hacemos">
+    <ul class="carrusel-pista">
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="1 de 8">
+        <img src="img/catastro-urbano.jpg" alt="Ortofoto urbana con el parcelario catastral superpuesto" style="object-position:center center">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h1>El Catastro de su municipio, <em>al día</em>.</h1>
+            <p class="entrada">Actualización catastral, teledetección y gestión tributaria, municipio a municipio. Desde Badajoz, para cualquier municipio.</p>
+            <div class="acciones"><a class="boton" href="catastro.html">Catastro y teledetección</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="2 de 8">
+        <img src="img/carrusel/teledeteccion.svg" alt="La inteligencia artificial marca en verde las cubiertas y la piscina de una parcela, con su grado de certeza" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Lo que el Catastro no ve, localizado con IA.</h2>
+            <p class="entrada">Nuestra teledetección compara la imagen aérea con el Catastro, parcela a parcela. Un técnico revisa cada alerta.</p>
+            <div class="acciones"><a class="boton" href="catastro.html#teledeteccion">Cómo funciona</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="3 de 8">
+        <img src="img/banda-catastro.jpg" alt="Plano catastral histórico de un término municipal" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Gabinete catastral.</h2>
+            <p class="entrada">GML, correcciones, declaraciones, valor de referencia y coordinación con el Registro: su finca, bien en el Catastro.</p>
+            <div class="acciones"><a class="boton" href="gabinete.html">Gabinete catastral</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="4 de 8">
+        <img src="img/carrusel/aprendizaje.svg" alt="El técnico marca unos ejemplos sobre la imagen aérea y el sistema encuentra el resto, con su grado de certeza" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Teledetección con IA, <em>a medida</em>.</h2>
+            <p class="entrada">Nuestro propio software aprende con ejemplos de su territorio y busca en la imagen aérea lo que usted necesite encontrar.</p>
+            <div class="acciones"><a class="boton" href="teledeteccion-ia.html">Cómo se adapta</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="5 de 8">
+        <img src="img/carrusel/segregacion.svg" alt="Finca rústica dividida en tres lotes, con sus superficies y las cotas del lindero" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Segregaciones, divisiones y particiones.</h2>
+            <p class="entrada">Plano acotado, unidad mínima de cultivo, GML y validación gráfica: cada finca nueva, bien hecha desde el principio.</p>
+            <div class="acciones"><a class="boton" href="segregaciones.html">Segregaciones y particiones</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="6 de 8">
+        <img src="img/carrusel/dron.svg" alt="Curvas de nivel obtenidas con dron, con la línea de un perfil y el perfil de nivelación" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Mediciones con dron RTK.</h2>
+            <p class="entrada">DJI Mavic 3 con RTK: ortofotos, modelos del terreno, curvado de nivel y nivelaciones con precisión centimétrica.</p>
+            <div class="acciones"><a class="boton" href="dron.html">Mediciones con dron</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="7 de 8">
+        <img src="img/carrusel/ambiental.svg" alt="Plano de afecciones: ámbito de un proyecto, un cauce con su zona de policía y un espacio protegido" style="object-position:right center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Estudios de impacto ambiental.</h2>
+            <p class="entrada">Documento ambiental, estudio de impacto y cartografía de afecciones para que su proyecto supere el trámite.</p>
+            <div class="acciones"><a class="boton" href="medio-ambiente.html">Medio ambiente</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="diapositiva" role="group" aria-roledescription="diapositiva" aria-label="8 de 8">
+        <img src="img/parcelario-rustico.jpg" alt="Parcelario rústico sobre ortofoto, con recintos, caminos y construcciones" style="object-position:center center" loading="lazy">
+        <div class="contenedor">
+          <div class="diapositiva-panel">
+            <h2>Valoraciones y peritajes.</h2>
+            <p class="entrada">Tasaciones, herencias y dictámenes periciales que se pueden seguir paso a paso, y defender.</p>
+            <div class="acciones"><a class="boton" href="valoraciones.html">Valoraciones y peritajes</a></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="carrusel-controles">
+      <div class="contenedor"><div class="carrusel-mando">
+        <button type="button" class="carrusel-flecha" data-ant aria-label="Anterior">←</button>
+        <button type="button" class="carrusel-flecha" data-sig aria-label="Siguiente">→</button>
+        <div class="carrusel-puntos"><button type="button" aria-label="Ir a la diapositiva 1"></button><button type="button" aria-label="Ir a la diapositiva 2"></button><button type="button" aria-label="Ir a la diapositiva 3"></button><button type="button" aria-label="Ir a la diapositiva 4"></button><button type="button" aria-label="Ir a la diapositiva 5"></button><button type="button" aria-label="Ir a la diapositiva 6"></button><button type="button" aria-label="Ir a la diapositiva 7"></button><button type="button" aria-label="Ir a la diapositiva 8"></button></div>
+        <button type="button" class="carrusel-pausa" data-pausa>Pausar</button>
+      </div></div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor cabeza-dos">
+      <div>
+        <h2>Teledetección: así encontramos lo que falta en el Catastro.</h2>
+        <p class="entrada">Seis parcelas vistas por capas. La imagen aérea, el parcelario, lo que consta y lo que detecta la IA: donde no coinciden, hay una alerta. Pulse la leyenda.</p>
+        <div class="acciones">
+          <a class="boton" href="contacto.html">Hablar con un técnico</a>
+          <a class="enlace" href="catastro.html#teledeteccion">Ver cómo funciona</a>
+        </div>
+      </div>
+      <figure class="lamina"><div class="plano" data-visor>
+  <svg viewBox="-34 -30 668 470" role="img" aria-labelledby="v-titulo v-desc" xmlns="http://www.w3.org/2000/svg" font-family="Red Hat Text,Arial,sans-serif">
+<title id="v-titulo">Plano de capas: ejemplo de detección de construcciones no catastradas</title>
+<desc id="v-desc">Seis parcelas. Al superponer la imagen, el parcelario, las construcciones que constan en Catastro y la detección automática aparecen tres alertas (una nave, una piscina y una ampliación) y un descarte (suelo con escombro).</desc>
+<defs>
+<pattern id="v-surcos" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-22)"><rect width="8" height="8" fill="#DCE3CF"/><rect width="2.5" height="8" fill="#C9D4B7"/></pattern>
+<pattern id="v-pasto" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#E3E8D7"/><circle cx="3" cy="4" r="1" fill="#C7D2B5"/><circle cx="8" cy="8" r="1" fill="#C7D2B5"/></pattern>
+<pattern id="v-olivar" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#E6E2D6"/><circle cx="8" cy="8" r="3.4" fill="#A9B993"/></pattern>
+<pattern id="v-rayado" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#1B2024" stroke-width="1"/></pattern>
+</defs>
+<rect x="0" y="0" width="600" height="420" fill="#F4F1EB"/>
+<g font-size="9.5" fill="#737A80">
+<line x1="0" y1="0" x2="0" y2="-6" stroke="#1B2024"/>
+<text x="0" y="-11" text-anchor="middle">681.200</text>
+<line x1="100" y1="0" x2="100" y2="-6" stroke="#1B2024"/>
+<text x="100" y="-11" text-anchor="middle">681.250</text>
+<line x1="200" y1="0" x2="200" y2="-6" stroke="#1B2024"/>
+<text x="200" y="-11" text-anchor="middle">681.300</text>
+<line x1="300" y1="0" x2="300" y2="-6" stroke="#1B2024"/>
+<text x="300" y="-11" text-anchor="middle">681.350</text>
+<line x1="400" y1="0" x2="400" y2="-6" stroke="#1B2024"/>
+<text x="400" y="-11" text-anchor="middle">681.400</text>
+<line x1="500" y1="0" x2="500" y2="-6" stroke="#1B2024"/>
+<text x="500" y="-11" text-anchor="middle">681.450</text>
+<line x1="600" y1="0" x2="600" y2="-6" stroke="#1B2024"/>
+<text x="600" y="-11" text-anchor="middle">681.500</text>
+<line x1="0" y1="0" x2="-6" y2="0" stroke="#1B2024"/>
+<text x="-10" y="3" text-anchor="end" transform="rotate(-90 -10 0)">4.293.400</text>
+<line x1="0" y1="100" x2="-6" y2="100" stroke="#1B2024"/>
+<text x="-10" y="103" text-anchor="end" transform="rotate(-90 -10 100)">4.293.350</text>
+<line x1="0" y1="200" x2="-6" y2="200" stroke="#1B2024"/>
+<text x="-10" y="203" text-anchor="end" transform="rotate(-90 -10 200)">4.293.300</text>
+<line x1="0" y1="300" x2="-6" y2="300" stroke="#1B2024"/>
+<text x="-10" y="303" text-anchor="end" transform="rotate(-90 -10 300)">4.293.250</text>
+<line x1="0" y1="400" x2="-6" y2="400" stroke="#1B2024"/>
+<text x="-10" y="403" text-anchor="end" transform="rotate(-90 -10 400)">4.293.200</text>
+</g>
+<g data-capa="imagen">
+<polygon points="20,20 210,20 220,150 25,165" fill="url(#v-pasto)"/>
+<polygon points="210,20 400,20 410,130 220,150" fill="url(#v-surcos)"/>
+<polygon points="400,20 580,20 580,115 410,130" fill="#E4DED2"/>
+<polygon points="25,190 220,175 230,400 30,400" fill="url(#v-pasto)"/>
+<polygon points="220,175 410,155 420,400 230,400" fill="url(#v-olivar)"/>
+<polygon points="410,155 580,140 580,400 420,400" fill="#E4DED2"/>
+<polygon points="25,165 220,150 410,130 600,113 600,140 410,155 220,175 25,190" fill="#EFEBE3"/>
+<rect x="70" y="55" width="62" height="38" rx="0" fill="#A6A29C"/>
+<rect x="150" y="94" width="44" height="30" rx="0" fill="#B9BCBE"/>
+<rect x="452" y="44" width="56" height="38" rx="0" fill="#A6A29C"/>
+<rect x="524" y="68" width="30" height="16" rx="3" fill="#BFD6D2"/>
+<rect x="70" y="246" width="64" height="42" rx="0" fill="#A6A29C"/>
+<rect x="134" y="253" width="26" height="30" rx="0" fill="#B9BCBE"/>
+<rect x="462" y="212" width="58" height="44" rx="0" fill="#A6A29C"/>
+<rect x="472" y="280" width="32" height="16" rx="3" fill="#BFD6D2"/>
+<ellipse cx="318" cy="292" rx="28" ry="17" fill="#D9D3C6"/>
+<circle cx="48" cy="120" r="7" fill="#9DB088"/>
+<circle cx="60" cy="132" r="7" fill="#9DB088"/>
+<circle cx="178" cy="48" r="7" fill="#9DB088"/>
+<circle cx="100" cy="330" r="7" fill="#9DB088"/>
+<circle cx="120" cy="352" r="7" fill="#9DB088"/>
+<circle cx="52" cy="300" r="7" fill="#9DB088"/>
+<circle cx="540" cy="360" r="7" fill="#9DB088"/>
+<circle cx="556" cy="330" r="7" fill="#9DB088"/>
+</g>
+<g data-capa="parcelario">
+<polygon points="20,20 210,20 220,150 25,165" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="36" y="40" font-size="11" font-weight="700" fill="#1B2024">412</text>
+<polygon points="210,20 400,20 410,130 220,150" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="230" y="40" font-size="11" font-weight="700" fill="#1B2024">413</text>
+<polygon points="400,20 580,20 580,115 410,130" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="418" y="40" font-size="11" font-weight="700" fill="#1B2024">414</text>
+<polygon points="25,190 220,175 230,400 30,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="42" y="210" font-size="11" font-weight="700" fill="#1B2024">415</text>
+<polygon points="220,175 410,155 420,400 230,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="240" y="196" font-size="11" font-weight="700" fill="#1B2024">416</text>
+<polygon points="410,155 580,140 580,400 420,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="430" y="174" font-size="11" font-weight="700" fill="#1B2024">417</text>
+</g>
+<g data-capa="construcciones">
+<rect x="70" y="55" width="62" height="38" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="452" y="44" width="56" height="38" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="70" y="246" width="64" height="42" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="462" y="212" width="58" height="44" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="472" y="280" width="32" height="16" rx="3" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+</g>
+<g data-capa="deteccion">
+<rect x="67" y="52" width="68" height="44" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="147" y="91" width="50" height="36" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="449" y="41" width="62" height="44" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="521" y="65" width="36" height="22" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="67" y="243" width="96" height="48" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="459" y="209" width="64" height="50" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="469" y="277" width="38" height="22" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<ellipse cx="318" cy="292" rx="31" ry="20" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26"/>
+</g>
+<g data-capa="alertas">
+<path d="M143 96V87H152 M192 87H201V96 M201 122V131H192 M152 131H143V122" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="204" y="72" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="217" y="84" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A1</text>
+<path d="M517 70V61H526 M552 61H561V70 M561 82V91H552 M526 91H517V82" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="564" y="46" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="577" y="58" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A2</text>
+<path d="M127 255V246H136 M158 246H167V255 M167 281V290H158 M136 290H127V281" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="170" y="231" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="183" y="243" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A3</text>
+<path d="M286 280V271H295 M341 271H350V280 M350 304V313H341 M295 313H286V304" fill="none" stroke="#737A80" stroke-width="1.6" stroke-dasharray="3 3"/>
+<rect x="352" y="258" width="26" height="16" fill="#fff" stroke="#737A80"/><text x="365" y="270" text-anchor="middle" font-size="10.5" font-weight="700" fill="#737A80">D1</text>
+</g>
+<g transform="translate(566 382)"><path d="M0 -26 L7 0 L0 -5 L-7 0 Z" fill="#1B2024"/><text x="0" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2024">N</text></g>
+<g transform="translate(24 396)"><rect width="40" height="4" fill="#1B2024"/><rect x="40" width="40" height="4" fill="#fff" stroke="#1B2024" stroke-width=".8"/><text x="0" y="-5" font-size="9.5" fill="#1B2024">0</text><text x="80" y="-5" text-anchor="end" font-size="9.5" fill="#1B2024">50 m</text></g>
+<rect x="0" y="0" width="600" height="420" fill="none" stroke="#1B2024"/>
+</svg>
+  <div class="plano-pie">
+    <div class="leyenda" role="group" aria-label="Capas del plano">
+      <button type="button" data-capa="imagen" aria-pressed="true" style="--muestra:#C9D4B7">Imagen aérea</button>
+      <button type="button" data-capa="parcelario" aria-pressed="true" style="--muestra:#1B2024">Parcelario</button>
+      <button type="button" data-capa="construcciones" aria-pressed="true" style="--muestra:#A6A29C">Construcciones en Catastro</button>
+      <button type="button" data-capa="deteccion" aria-pressed="true" style="--muestra:#8FB36A">Detección</button>
+      <button type="button" data-capa="alertas" aria-pressed="true" style="--muestra:#3E5F26">Alertas</button>
+    </div>
+    <span class="plano-estado" data-estado aria-live="polite">5 de 5 capas</span>
+  </div>
+  <ol class="plano-alertas">
+    <li><b>A1</b>Parcela 412 · nave sin registrar</li>
+    <li><b>A2</b>Parcela 414 · piscina sin registrar</li>
+    <li><b>A3</b>Parcela 415 · ampliación de la vivienda</li>
+    <li class="d"><b>D1</b>Parcela 416 · descartada: suelo con escombro</li>
+  </ol>
+</div>
+</figure>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Todo lo que hacemos.</h2>
+        </div>
+      </div><div class="grupos">
+        <div>
+          <h3 class="grupo-titulo">Catastro</h3>
+          <p>Lo que hacemos desde 1987: el Catastro de los municipios y los problemas catastrales de cada finca.</p>
+          <ul class="indice compacto"><li><a href="catastro.html"><span class="t">Catastro y teledetección catastral</span><span class="d">Actualización por municipio, teledetección con IA, padrón, licencias e IBI.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="gabinete.html"><span class="t">Gabinete catastral</span><span class="d">GML, correcciones, declaraciones, valor de referencia y Registro.</span><span class="f" aria-hidden="true">→</span></a></li></ul>
+        </div>
+        <div>
+          <h3 class="grupo-titulo">Proyectos</h3>
+          <p>Trabajos que salen del mismo oficio: el territorio medido, valorado y cartografiado.</p>
+          <ul class="indice compacto"><li><a href="teledeteccion-ia.html"><span class="t">Teledetección con IA a medida</span><span class="d">Entrenamos el sistema para encontrar lo que usted necesite.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="segregaciones.html"><span class="t">Segregaciones y particiones</span><span class="d">Segregar, dividir, agrupar o repartir una finca.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="dron.html"><span class="t">Mediciones con dron</span><span class="d">Ortofotos, modelos del terreno, curvado de nivel y nivelaciones.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="medio-ambiente.html"><span class="t">Medio ambiente</span><span class="d">Estudios de impacto ambiental y cartografía de afecciones.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="valoraciones.html"><span class="t">Valoraciones y peritajes</span><span class="d">Tasaciones, herencias y dictámenes periciales.</span><span class="f" aria-hidden="true">→</span></a></li><li><a href="digitalizacion.html"><span class="t">Digitalización y datos</span><span class="d">Planos, archivos y tomas de datos.</span><span class="f" aria-hidden="true">→</span></a></li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Así es un encargo con nosotros.</h2>
+        </div>
+      </div><ol class="recorrido"><li><b>Nos cuenta el caso</b><span>Por teléfono o correo, con la referencia catastral o el municipio.</span></li><li><b>Lo estudiamos</b><span>Le decimos si tiene arreglo, en qué plazo y cuánto cuesta.</span></li><li><b>Lo resolvemos</b><span>En campo y en gabinete, con el mismo técnico.</span></li><li><b>Se lo entregamos</b><span>Documentado y revisado, listo para presentar.</span></li></ol>
+      <div class="datos" style="margin-top:clamp(36px,5vw,56px)">
+        <div><b>1987</b>en el oficio</div>
+        <div><b>Badajoz</b>para cualquier municipio</div>
+        <div><b>Un técnico</b>de principio a fin</div>
+      </div>
+    </div>
+  </section>
+  <section class="contacto" id="contacto">
+    <div class="contenedor contacto-rejilla">
+      <div>
+        <h2>Cuéntenos qué necesita.</h2>
+        <p class="entrada" style="margin-top:1.2rem">Le atiende un técnico, no una centralita. Si no es un trabajo que podamos hacer bien, se lo decimos en la primera llamada.</p>
+      </div>
+      <div>
+        <a class="contacto-tel" href="tel:+34924253530">924 253 530</a>
+        <ul class="contacto-datos">
+          <li><a href="mailto:emiliocontadorbrito@gmail.com">emiliocontadorbrito@gmail.com</a></li>
+          <li>Calle Matilde Tagle Ortiz, 28, 5.º&nbsp;D, 06006 Badajoz</li>
+        </ul>
+        <div class="acciones"><a class="boton" href="contacto.html">Escribirnos</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+      <div>
+        <img src="img/GEO-INGENIERIA_principal.svg" alt="GEO INGENIERÍA" width="150" height="75">
+        <p>Catastro, teledetección y territorio.<br>Desde Badajoz, para cualquier municipio.</p>
+      </div>
+      <div>
+        <h4>Catastro</h4>
+        <ul>
+          <li><a href="catastro.html">Catastro y teledetección catastral</a></li>
+          <li><a href="gabinete.html">Gabinete catastral</a></li>
+        </ul>
+        <h4 style="margin-top:1.6rem">La empresa</h4>
+        <ul>
+          <li><a href="empresa.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Proyectos</h4>
+        <ul>
+          <li><a href="teledeteccion-ia.html">Teledetección con IA a medida</a></li>
+          <li><a href="segregaciones.html">Segregaciones y particiones</a></li>
+          <li><a href="dron.html">Mediciones con dron</a></li>
+          <li><a href="medio-ambiente.html">Medio ambiente</a></li>
+          <li><a href="valoraciones.html">Valoraciones y peritajes</a></li>
+          <li><a href="digitalizacion.html">Digitalización y datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Oficina</h4>
+        <ul>
+          <li>Calle Matilde Tagle Ortiz, 28, 5.º&nbsp;D<br>06006 Badajoz</li>
+          <li><a href="tel:+34924253530">924 253 530</a></li>
+          <li><a href="mailto:emiliocontadorbrito@gmail.com">emiliocontadorbrito@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie-legal">
+      <span>© 2026 GEO INGENIERÍA</span>
+      <span><a href="aviso-legal.html">Aviso legal y privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/carrusel.js"></script>
+<script src="js/visor.js"></script>
+</body>
+</html>

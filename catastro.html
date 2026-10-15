@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catastro y teledetección · GEO INGENIERÍA</title>
+<meta name="description" content="Actualización catastral por municipio y teledetección con inteligencia artificial: construcciones sin registrar localizadas sobre imagen aérea y revisadas por un técnico. Padrón, licencias, cartografía y gestión tributaria.">
+
+<meta name="theme-color" content="#F9F7F5">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="GEO INGENIERÍA">
+<meta property="og:title" content="Catastro y teledetección · GEO INGENIERÍA">
+<meta property="og:description" content="Actualización catastral por municipio y teledetección con inteligencia artificial: construcciones sin registrar localizadas sobre imagen aérea y revisadas por un técnico. Padrón, licencias, cartografía y gestión tributaria.">
+<meta property="og:image" content="img/catastro-urbano.jpg">
+<link rel="icon" href="img/GEO-INGENIERIA_icono-app.svg" type="image/svg+xml">
+<link rel="icon" href="img/GEO-INGENIERIA_icono-app_512px.png" sizes="512x512">
+<link rel="apple-touch-icon" href="img/GEO-INGENIERIA_icono-app_512px.png">
+<link rel="preload" href="fuentes/newsreader-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/red-hat-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera-fila">
+    <a class="marca" href="index.html" aria-label="GEO INGENIERÍA, inicio">
+      <img src="img/GEO-INGENIERIA_principal.svg" alt="GEO INGENIERÍA" width="150" height="75">
+    </a>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <div class="desplegable">
+        <button type="button" class="desplegable-boton actual" aria-expanded="false" aria-controls="sub-catastro">Catastro</button>
+        <div class="submenu" id="sub-catastro"><a href="catastro.html" aria-current="page">Catastro y teledetección catastral</a><a href="gabinete.html">Gabinete catastral</a></div>
+      </div>
+      <div class="desplegable">
+        <button type="button" class="desplegable-boton" aria-expanded="false" aria-controls="sub-proyectos">Proyectos</button>
+        <div class="submenu" id="sub-proyectos"><a href="teledeteccion-ia.html">Teledetección con IA a medida</a><a href="segregaciones.html">Segregaciones y particiones</a><a href="dron.html">Mediciones con dron</a><a href="medio-ambiente.html">Medio ambiente</a><a href="valoraciones.html">Valoraciones y peritajes</a><a href="digitalizacion.html">Digitalización y datos</a></div>
+      </div>
+      <a href="empresa.html">Empresa</a>
+      <a href="contacto.html">Contacto</a>
+      <a class="menu-tel" href="tel:+34924253530">Llamar: 924 253 530</a>
+    </nav>
+    <a class="cabecera-tel" href="tel:+34924253530">924 253 530</a>
+  </div>
+</header>
+
+<main id="principal">
+  <section class="cabeza sin-borde">
+    <div class="contenedor cabeza-dos">
+      <div>
+        <p class="meta"><a href="index.html">Inicio</a> / Catastro</p>
+        <h1>Catastro y teledetección.</h1>
+        <p class="entrada">Actualizamos el Catastro municipio a municipio. Con teledetección propia localizamos lo que falta, y lo dejamos listo para que llegue al recibo del IBI.</p>
+        <div class="acciones"><a class="boton" href="#contacto">Plantear un municipio</a><a class="enlace" href="#teledeteccion">Ver la teledetección</a></div>
+      </div>
+      <figure class="lamina foto"><div class="lamina-marco"><img src="img/catastro-urbano.jpg" alt="Ortofoto urbana con el parcelario catastral superpuesto" loading="lazy"></div></figure>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Actualización catastral: campo, gabinete y entrega.</h2>
+        </div>
+      </div><div class="columnas"><div class="revelar"><h3>Campo</h3><p>Parcela por parcela: la incidencia fotografiada y el punto marcado.</p></div><div class="revelar"><h3>Gabinete</h3><p>Cruzar, depurar y cargar en las bases catastrales, dejando traza de cada decisión.</p></div><div class="revelar"><h3>Entrega</h3><p>Carpeta cerrada por municipio, con recuentos comprobados y hoja de revisión.</p></div></div>
+    </div>
+  </section>
+  <section class="blanco" id="teledeteccion">
+    <div class="contenedor cabeza-dos">
+      <div>
+        <h2>Teledetección: encontramos lo que el Catastro no ve.</h2>
+        <p class="entrada">Inteligencia artificial propia sobre imagen aérea, parcela a parcela. Usted recibe solo lo importante: las alertas, revisadas una a una por un técnico.</p>
+        <p>Pulse la leyenda del plano para encender y apagar cada capa. ¿Necesita buscar otra cosa? El sistema se entrena <a href="teledeteccion-ia.html">a medida</a>.</p>
+      </div>
+      <figure class="lamina"><div class="plano" data-visor>
+  <svg viewBox="-34 -30 668 470" role="img" aria-labelledby="v-titulo v-desc" xmlns="http://www.w3.org/2000/svg" font-family="Red Hat Text,Arial,sans-serif">
+<title id="v-titulo">Plano de capas: ejemplo de detección de construcciones no catastradas</title>
+<desc id="v-desc">Seis parcelas. Al superponer la imagen, el parcelario, las construcciones que constan en Catastro y la detección automática aparecen tres alertas (una nave, una piscina y una ampliación) y un descarte (suelo con escombro).</desc>
+<defs>
+<pattern id="v-surcos" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-22)"><rect width="8" height="8" fill="#DCE3CF"/><rect width="2.5" height="8" fill="#C9D4B7"/></pattern>
+<pattern id="v-pasto" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#E3E8D7"/><circle cx="3" cy="4" r="1" fill="#C7D2B5"/><circle cx="8" cy="8" r="1" fill="#C7D2B5"/></pattern>
+<pattern id="v-olivar" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#E6E2D6"/><circle cx="8" cy="8" r="3.4" fill="#A9B993"/></pattern>
+<pattern id="v-rayado" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="5" stroke="#1B2024" stroke-width="1"/></pattern>
+</defs>
+<rect x="0" y="0" width="600" height="420" fill="#F4F1EB"/>
+<g font-size="9.5" fill="#737A80">
+<line x1="0" y1="0" x2="0" y2="-6" stroke="#1B2024"/>
+<text x="0" y="-11" text-anchor="middle">681.200</text>
+<line x1="100" y1="0" x2="100" y2="-6" stroke="#1B2024"/>
+<text x="100" y="-11" text-anchor="middle">681.250</text>
+<line x1="200" y1="0" x2="200" y2="-6" stroke="#1B2024"/>
+<text x="200" y="-11" text-anchor="middle">681.300</text>
+<line x1="300" y1="0" x2="300" y2="-6" stroke="#1B2024"/>
+<text x="300" y="-11" text-anchor="middle">681.350</text>
+<line x1="400" y1="0" x2="400" y2="-6" stroke="#1B2024"/>
+<text x="400" y="-11" text-anchor="middle">681.400</text>
+<line x1="500" y1="0" x2="500" y2="-6" stroke="#1B2024"/>
+<text x="500" y="-11" text-anchor="middle">681.450</text>
+<line x1="600" y1="0" x2="600" y2="-6" stroke="#1B2024"/>
+<text x="600" y="-11" text-anchor="middle">681.500</text>
+<line x1="0" y1="0" x2="-6" y2="0" stroke="#1B2024"/>
+<text x="-10" y="3" text-anchor="end" transform="rotate(-90 -10 0)">4.293.400</text>
+<line x1="0" y1="100" x2="-6" y2="100" stroke="#1B2024"/>
+<text x="-10" y="103" text-anchor="end" transform="rotate(-90 -10 100)">4.293.350</text>
+<line x1="0" y1="200" x2="-6" y2="200" stroke="#1B2024"/>
+<text x="-10" y="203" text-anchor="end" transform="rotate(-90 -10 200)">4.293.300</text>
+<line x1="0" y1="300" x2="-6" y2="300" stroke="#1B2024"/>
+<text x="-10" y="303" text-anchor="end" transform="rotate(-90 -10 300)">4.293.250</text>
+<line x1="0" y1="400" x2="-6" y2="400" stroke="#1B2024"/>
+<text x="-10" y="403" text-anchor="end" transform="rotate(-90 -10 400)">4.293.200</text>
+</g>
+<g data-capa="imagen">
+<polygon points="20,20 210,20 220,150 25,165" fill="url(#v-pasto)"/>
+<polygon points="210,20 400,20 410,130 220,150" fill="url(#v-surcos)"/>
+<polygon points="400,20 580,20 580,115 410,130" fill="#E4DED2"/>
+<polygon points="25,190 220,175 230,400 30,400" fill="url(#v-pasto)"/>
+<polygon points="220,175 410,155 420,400 230,400" fill="url(#v-olivar)"/>
+<polygon points="410,155 580,140 580,400 420,400" fill="#E4DED2"/>
+<polygon points="25,165 220,150 410,130 600,113 600,140 410,155 220,175 25,190" fill="#EFEBE3"/>
+<rect x="70" y="55" width="62" height="38" rx="0" fill="#A6A29C"/>
+<rect x="150" y="94" width="44" height="30" rx="0" fill="#B9BCBE"/>
+<rect x="452" y="44" width="56" height="38" rx="0" fill="#A6A29C"/>
+<rect x="524" y="68" width="30" height="16" rx="3" fill="#BFD6D2"/>
+<rect x="70" y="246" width="64" height="42" rx="0" fill="#A6A29C"/>
+<rect x="134" y="253" width="26" height="30" rx="0" fill="#B9BCBE"/>
+<rect x="462" y="212" width="58" height="44" rx="0" fill="#A6A29C"/>
+<rect x="472" y="280" width="32" height="16" rx="3" fill="#BFD6D2"/>
+<ellipse cx="318" cy="292" rx="28" ry="17" fill="#D9D3C6"/>
+<circle cx="48" cy="120" r="7" fill="#9DB088"/>
+<circle cx="60" cy="132" r="7" fill="#9DB088"/>
+<circle cx="178" cy="48" r="7" fill="#9DB088"/>
+<circle cx="100" cy="330" r="7" fill="#9DB088"/>
+<circle cx="120" cy="352" r="7" fill="#9DB088"/>
+<circle cx="52" cy="300" r="7" fill="#9DB088"/>
+<circle cx="540" cy="360" r="7" fill="#9DB088"/>
+<circle cx="556" cy="330" r="7" fill="#9DB088"/>
+</g>
+<g data-capa="parcelario">
+<polygon points="20,20 210,20 220,150 25,165" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="36" y="40" font-size="11" font-weight="700" fill="#1B2024">412</text>
+<polygon points="210,20 400,20 410,130 220,150" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="230" y="40" font-size="11" font-weight="700" fill="#1B2024">413</text>
+<polygon points="400,20 580,20 580,115 410,130" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="418" y="40" font-size="11" font-weight="700" fill="#1B2024">414</text>
+<polygon points="25,190 220,175 230,400 30,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="42" y="210" font-size="11" font-weight="700" fill="#1B2024">415</text>
+<polygon points="220,175 410,155 420,400 230,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="240" y="196" font-size="11" font-weight="700" fill="#1B2024">416</text>
+<polygon points="410,155 580,140 580,400 420,400" fill="none" stroke="#1B2024" stroke-width="1.3"/>
+<text x="430" y="174" font-size="11" font-weight="700" fill="#1B2024">417</text>
+</g>
+<g data-capa="construcciones">
+<rect x="70" y="55" width="62" height="38" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="452" y="44" width="56" height="38" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="70" y="246" width="64" height="42" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="462" y="212" width="58" height="44" rx="0" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+<rect x="472" y="280" width="32" height="16" rx="3" fill="url(#v-rayado)" stroke="#1B2024" stroke-width="1.2"/>
+</g>
+<g data-capa="deteccion">
+<rect x="67" y="52" width="68" height="44" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="147" y="91" width="50" height="36" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="449" y="41" width="62" height="44" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="521" y="65" width="36" height="22" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="67" y="243" width="96" height="48" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="459" y="209" width="64" height="50" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<rect x="469" y="277" width="38" height="22" rx="3" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26" stroke-width="1"/>
+<ellipse cx="318" cy="292" rx="31" ry="20" fill="#8FB36A" fill-opacity=".55" stroke="#3E5F26"/>
+</g>
+<g data-capa="alertas">
+<path d="M143 96V87H152 M192 87H201V96 M201 122V131H192 M152 131H143V122" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="204" y="72" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="217" y="84" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A1</text>
+<path d="M517 70V61H526 M552 61H561V70 M561 82V91H552 M526 91H517V82" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="564" y="46" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="577" y="58" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A2</text>
+<path d="M127 255V246H136 M158 246H167V255 M167 281V290H158 M136 290H127V281" fill="none" stroke="#3E5F26" stroke-width="2.4"/>
+<rect x="170" y="231" width="26" height="16" fill="#fff" stroke="#3E5F26"/><text x="183" y="243" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3E5F26">A3</text>
+<path d="M286 280V271H295 M341 271H350V280 M350 304V313H341 M295 313H286V304" fill="none" stroke="#737A80" stroke-width="1.6" stroke-dasharray="3 3"/>
+<rect x="352" y="258" width="26" height="16" fill="#fff" stroke="#737A80"/><text x="365" y="270" text-anchor="middle" font-size="10.5" font-weight="700" fill="#737A80">D1</text>
+</g>
+<g transform="translate(566 382)"><path d="M0 -26 L7 0 L0 -5 L-7 0 Z" fill="#1B2024"/><text x="0" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1B2024">N</text></g>
+<g transform="translate(24 396)"><rect width="40" height="4" fill="#1B2024"/><rect x="40" width="40" height="4" fill="#fff" stroke="#1B2024" stroke-width=".8"/><text x="0" y="-5" font-size="9.5" fill="#1B2024">0</text><text x="80" y="-5" text-anchor="end" font-size="9.5" fill="#1B2024">50 m</text></g>
+<rect x="0" y="0" width="600" height="420" fill="none" stroke="#1B2024"/>
+</svg>
+  <div class="plano-pie">
+    <div class="leyenda" role="group" aria-label="Capas del plano">
+      <button type="button" data-capa="imagen" aria-pressed="true" style="--muestra:#C9D4B7">Imagen aérea</button>
+      <button type="button" data-capa="parcelario" aria-pressed="true" style="--muestra:#1B2024">Parcelario</button>
+      <button type="button" data-capa="construcciones" aria-pressed="true" style="--muestra:#A6A29C">Construcciones en Catastro</button>
+      <button type="button" data-capa="deteccion" aria-pressed="true" style="--muestra:#8FB36A">Detección</button>
+      <button type="button" data-capa="alertas" aria-pressed="true" style="--muestra:#3E5F26">Alertas</button>
+    </div>
+    <span class="plano-estado" data-estado aria-live="polite">5 de 5 capas</span>
+  </div>
+  <ol class="plano-alertas">
+    <li><b>A1</b>Parcela 412 · nave sin registrar</li>
+    <li><b>A2</b>Parcela 414 · piscina sin registrar</li>
+    <li><b>A3</b>Parcela 415 · ampliación de la vivienda</li>
+    <li class="d"><b>D1</b>Parcela 416 · descartada: suelo con escombro</li>
+  </ol>
+</div>
+</figure>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Tres miradas a cada parcela.</h2>
+          <p class="entrada">La imagen, lo que reconoce la IA y lo que dice el Catastro. Si no coinciden, hay alerta.</p>
+        </div>
+      </div><div class="triptico"><div class="vista revelar"><h3>1. La imagen aérea</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ortofoto.svg" alt="Ortofoto de una parcela con vivienda, piscina y nave" loading="lazy"></div></figure></div><div class="vista revelar"><h3>2. Lo que reconoce la IA</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-ia.svg" alt="La inteligencia artificial marca en verde las cubiertas y la piscina, con su grado de certeza" loading="lazy"></div></figure></div><div class="vista revelar"><h3>3. Lo que consta en el Catastro</h3><figure class="lamina"><div class="lamina-marco"><img src="img/tele/vista-catastro.svg" alt="El lindero y lo que consta en Catastro; la nave no consta y queda señalada como alerta" loading="lazy"></div></figure></div></div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>No adivinamos. Medimos.</h2>
+          <p class="entrada">Comparamos los metros que ve la IA con los que constan en el Catastro. La diferencia es la alerta. Pruebe con tres parcelas de ejemplo.</p>
+          <div class="medidor" data-medidor style="margin-top:2rem;max-width:640px">
+            <div class="medidor-pestanas" role="tablist" aria-label="Parcelas de ejemplo">
+              <button role="tab" aria-selected="true" data-p="0">Parcela A</button>
+              <button role="tab" aria-selected="false" data-p="1">Parcela B</button>
+              <button role="tab" aria-selected="false" data-p="2">Parcela C</button>
+            </div>
+            <div class="medidor-cuerpo" role="tabpanel" aria-live="polite">
+              <p class="medidor-sup" data-campo="sup">Superficie de la parcela: 2.400 m²</p>
+              <div class="barra"><span>Ve la IA</span><div><i data-campo="ia" style="width:17%"></i></div><b data-campo="ia-t">17 % · 410 m²</b></div>
+              <div class="barra"><span>Consta en Catastro</span><div><i class="cat" data-campo="cat" style="width:16%"></i></div><b data-campo="cat-t">16 % · 395 m²</b></div>
+              <div class="barra dif"><span>Diferencia</span><div><i class="dif" data-campo="dif" style="width:1%"></i></div><b data-campo="dif-t">15 m²</b></div>
+              <div class="veredicto" data-campo="ver" data-tipo="ok"><strong data-campo="ver-t">Todo en orden</strong><span data-campo="ver-d">Lo que se ve coincide con lo registrado.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Del término entero al último metro.</h2>
+          <p class="entrada">La ortofoto oficial cubre todo el municipio. Nuestro <a href="dron.html">dron con RTK</a> llega donde hace falta detalle.</p>
+        </div>
+      </div><div class="dos-laminas"><figure class="lamina revelar"><div class="lamina-marco"><img src="img/tele/pixeles.svg" alt="El mismo recorte de terreno con la ortofoto oficial, a unos 25 centímetros por píxel, y con el dron, a pocos centímetros por píxel" loading="lazy"></div></figure><figure class="lamina revelar"><div class="lamina-marco"><img src="img/tele/dron-curvas.svg" alt="Plan de vuelo de un dron sobre un plano de curvas de nivel" loading="lazy"></div></figure></div><div class="columnas"><div class="revelar"><h3>Ortofoto oficial</h3><p>Todo el término, con su fecha de vuelo.</p></div><div class="revelar"><h3>Cartografía catastral</h3><p>Las parcelas y construcciones que constan, para comparar.</p></div><div class="revelar"><h3>Dron con RTK</h3><p>Ortofoto de detalle, modelo del terreno y curvas de nivel, a fecha de hoy.</p></div><div class="revelar"><h3>Campo</h3><p>La comprobación final, con foto y referencia catastral.</p></div></div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Alertas listas para actuar.</h2>
+          <p class="entrada">Nada de mapas que interpretar: parcelas con su referencia, sus imágenes y una decisión.</p>
+          <div class="dos" style="margin-top:2rem">
+            <div><ul class="lista"><li><strong>Alertas</strong> ordenadas por prioridad.</li><li><strong>Una hoja de revisión</strong> por parcela.</li><li><strong>Una capa</strong> para su SIG y un Excel con cada referencia.</li><li><strong>El listado</strong> para la visita a campo.</li></ul></div>
+            <div class="hoja revelar">
+            <div class="hoja-cab"><span>Hoja de revisión</span><strong>Parcela 412 · polígono 6</strong><em>ejemplo</em></div>
+            <div class="hoja-vistas"><img src="img/tele/vista-ortofoto.svg" alt="" loading="lazy"><img src="img/tele/vista-ia.svg" alt="" loading="lazy"><img src="img/tele/vista-catastro.svg" alt="" loading="lazy"></div>
+            <dl class="hoja-datos">
+              <div><dt>Superficie</dt><dd>3.100 m²</dd></div><div><dt>Ve la IA</dt><dd>520 m²</dd></div>
+              <div><dt>Consta</dt><dd>240 m²</dd></div><div><dt>Diferencia</dt><dd>280 m²</dd></div>
+            </dl>
+            <div class="veredicto" data-tipo="alerta"><strong>Alerta confirmada</strong><span>Nave sin registrar. Pasa a campo.</span></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Una máquina que no decide sola.</h2>
+        </div>
+      </div><div class="columnas"><div class="revelar"><h3>Revisión humana</h3><p>Cada alerta la valida un técnico antes de salir.</p></div><div class="revelar"><h3>Sin atajos</h3><p>Lo dudoso se mira; no se descarta con un número.</p></div><div class="revelar"><h3>Medido sin trampas</h3><p>Su acierto se mide en zonas que nunca vio al aprender.</p></div><div class="revelar"><h3>Su municipio</h3><p>Se adapta a cualquier término municipal.</p></div></div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Padrón y licencias.</h2>
+        </div>
+      </div><div class="dos" style="margin-top:1.6rem">
+        <div><h3>Cada hogar, con su referencia catastral</h3><ul class="lista"><li>Emparejamiento de vías y números, con las dudas marcadas y no resueltas a ciegas.</li><li>Cruce por los catorce primeros caracteres de la referencia, los que identifican el inmueble.</li><li>Hoja de control con el recuento de hogares por pueblo.</li></ul></div>
+        <div><h3>Licencias que el Catastro aún no recoge</h3><ul class="lista"><li>Cruce de las licencias del ayuntamiento con la antigüedad catastral.</li><li>Lo ya reflejado se descarta solo.</li><li>Lo pendiente sale con su imagen aérea, listo para revisar.</li></ul></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Del Catastro a la liquidación.</h2><ul class="lista"><li><strong>Planes de inspección</strong> sobre la base catastral ya depurada.</li><li><strong>Expedientes sancionadores</strong>: tramitación y control de plazos.</li><li><strong>Actas</strong> con su documentación gráfica y catastral.</li><li><strong>Liquidaciones</strong> a partir de los datos comprobados.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blanco" id="cartografia">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Planos y cartografía catastral.</h2>
+          <p class="entrada">Planos que se entienden y se pueden comprobar, en el formato que pide cada trámite.</p><ul class="lista"><li><strong>Planos de parcela</strong> a escala, con norte, cotas y recintos.</li><li><strong>Ortofoto, modelo del terreno y curvas de nivel</strong> con vuelo propio de dron.</li><li><strong>Cartografía adaptada</strong> al formato de la Dirección General del Catastro.</li><li><strong>KML para Google Earth</strong> con la ficha de cada parcela.</li></ul><p class="nota" style="margin-top:1.4rem">Antes de superponer dos capas comprobamos el sistema de referencia de cada una.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Otros trabajos catastrales.</h2>
+        </div>
+      </div><div class="columnas"><div class="revelar"><h3>Memorias para concurso</h3><p>Redactadas conforme al pliego, cuidando el formato que puntúa.</p></div><div class="revelar"><h3>Listados catastrales</h3><p>Extracción, cruce y control de ficheros de intercambio.</p></div><div class="revelar"><h3>Fotografía de fachadas</h3><p>Comprimida al tope del pliego, sin perder el GPS.</p></div></div>
+    </div>
+  </section>
+  <section class="blanco">
+    <div class="contenedor">
+      <div class="bloque">
+        <div class="bloque-cuerpo">
+<h2>Lo que nos preguntan.</h2><div class="preguntas"><details><summary>¿La teledetección sustituye al trabajo de campo?</summary><div><p>No: lo dirige. El equipo va solo a las parcelas con alerta.</p></div></details><details><summary>¿Una alerta basta para regularizar?</summary><div><p>Es un indicio documentado. La regularización la tramita el organismo competente tras comprobarla.</p></div></details><details><summary>¿De qué fecha es la imagen?</summary><div><p>La más reciente disponible, y consta en cada entrega. Si es antigua, volamos con el dron.</p></div></details><details><summary>¿Qué tiene que aportar el ayuntamiento?</summary><div><p>Poco: la cartografía catastral es pública. El resto se acuerda en el encargo.</p></div></details><details><summary>¿Se puede probar antes?</summary><div><p>Sí. Empezamos por un sector de su municipio y usted decide con resultados reales.</p></div></details></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacto" id="contacto">
+    <div class="contenedor contacto-rejilla">
+      <div>
+        <h2>¿Qué municipio quiere poner al día?</h2>
+        <p class="entrada" style="margin-top:1.2rem">Empezamos por un sector de prueba: verá alertas reales de su término antes de decidir.</p>
+      </div>
+      <div>
+        <a class="contacto-tel" href="tel:+34924253530">924 253 530</a>
+        <ul class="contacto-datos">
+          <li><a href="mailto:emiliocontadorbrito@gmail.com">emiliocontadorbrito@gmail.com</a></li>
+          <li>Calle Matilde Tagle Ortiz, 28, 5.º&nbsp;D, 06006 Badajoz</li>
+        </ul>
+        <div class="acciones"><a class="boton" href="contacto.html">Pedir una reunión</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+      <div>
+        <img src="img/GEO-INGENIERIA_principal.svg" alt="GEO INGENIERÍA" width="150" height="75">
+        <p>Catastro, teledetección y territorio.<br>Desde Badajoz, para cualquier municipio.</p>
+      </div>
+      <div>
+        <h4>Catastro</h4>
+        <ul>
+          <li><a href="catastro.html">Catastro y teledetección catastral</a></li>
+          <li><a href="gabinete.html">Gabinete catastral</a></li>
+        </ul>
+        <h4 style="margin-top:1.6rem">La empresa</h4>
+        <ul>
+          <li><a href="empresa.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="aviso-legal.html">Aviso legal y privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Proyectos</h4>
+        <ul>
+          <li><a href="teledeteccion-ia.html">Teledetección con IA a medida</a></li>
+          <li><a href="segregaciones.html">Segregaciones y particiones</a></li>
+          <li><a href="dron.html">Mediciones con dron</a></li>
+          <li><a href="medio-ambiente.html">Medio ambiente</a></li>
+          <li><a href="valoraciones.html">Valoraciones y peritajes</a></li>
+          <li><a href="digitalizacion.html">Digitalización y datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Oficina</h4>
+        <ul>
+          <li>Calle Matilde Tagle Ortiz, 28, 5.º&nbsp;D<br>06006 Badajoz</li>
+          <li><a href="tel:+34924253530">924 253 530</a></li>
+          <li><a href="mailto:emiliocontadorbrito@gmail.com">emiliocontadorbrito@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie-legal">
+      <span>© 2026 GEO INGENIERÍA</span>
+      <span><a href="aviso-legal.html">Aviso legal y privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/visor.js"></script>
+<script src="js/medidor.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /aviso-legal.html
+
+Sitemap: https://emiliocontadorbrito-ui.github.io/geoingenieria/sitemap.xml
