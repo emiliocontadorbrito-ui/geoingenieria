@@ -1,14 +1,14 @@
-/* Medidor del porcentaje (teledetección). Tres parcelas de ejemplo: lo que la IA
-   ve construido, lo que consta en el Catastro y la diferencia. Sin JavaScript se
-   ve la parcela A, que ya viene escrita en el HTML. */
+/* Medidor del porcentaje (teledetección). Tres parcelas de ejemplo: lo que se ve
+   construido en la imagen, lo que consta en el Catastro y lo que queda sin explicar.
+   Sin JavaScript se ve la parcela A, que ya viene escrita en el HTML. */
 (function () {
   var P = [
-    { sup: 2400, ia: 410, cat: 395, tipo: 'ok', t: 'Todo en orden',
-      d: 'Lo que se ve coincide con lo registrado.' },
+    { sup: 2400, ia: 410, cat: 395, tipo: 'ok', t: 'Sin alerta',
+      d: 'Lo que se ve cuadra con lo que consta; la diferencia está en los bordes.' },
     { sup: 3100, ia: 520, cat: 240, tipo: 'alerta', t: 'Alerta',
-      d: 'Una nave de unos 60 m² sin registrar. Pasa a campo.' },
+      d: 'Unos 280 m² construidos que el Catastro no explica. Hay que comprobarlos en campo.' },
     { sup: 4000, ia: 1150, cat: 0, tipo: 'descartada', t: 'Descartada',
-      d: 'Era escombro, no una construcción. Lo comprueba un técnico.' }
+      d: 'En la revisión se vio que era escombro, no una construcción.' }
   ];
   var miles = function (n) { return n.toLocaleString('es-ES'); };
   var pct = function (a, b) { return Math.round(a / b * 100); };
